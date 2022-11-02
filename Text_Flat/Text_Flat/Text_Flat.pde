@@ -2,6 +2,7 @@
 int appWidth, appHeight;
 float titleX, titleY, titleWidth, titleHeight;
 String title = "JA PIERDOLE KURWA MACHT!!";
+PFont titleFont;
 //
 size(700,400); //Landscape
 //Copy Display Algorithm
@@ -15,7 +16,11 @@ titleHeight = appHeight * 1/3;
 //
 //Text Setup, single executed code
 //Fonts from OS (Operating System)
-String [] fontlist = PFont.list();
-void setup(){}
+String [] fontList = PFont.list();
+printArray (fontList);
+titleFont = createFont("Corbel", 55);
 //
 rect(titleX, titleY, titleWidth, titleHeight);
+//
+//Repeated Executed Code 
+text(title, titleX, titleY, titleWidth, titleHeight);
