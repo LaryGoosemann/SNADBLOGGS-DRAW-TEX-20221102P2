@@ -11,9 +11,9 @@ appWidth = width;
 appHeight = height;
 //Population
 titleX = appWidth * 1/4;
-titleY = appHeight * 1/3;
+titleY = appHeight * 1/12;
 titleWidth = appWidth * 1/2;
-titleHeight = appHeight * 1/3;
+titleHeight = appHeight * 1/12;
 //
 //Text Setup, single executed code
 //Fonts from OS (Operating System)
@@ -25,6 +25,7 @@ rect(titleX, titleY, titleWidth, titleHeight);
 //
 //Repeated Executed Code 
 fill(black);
+textAlign(CENTER,CENTER);
 fontSize = 25;
 textFont(titleFont, fontSize);
 text( title, titleX, titleY, titleWidth, titleHeight);
